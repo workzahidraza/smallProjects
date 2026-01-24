@@ -1,0 +1,102 @@
+:root {
+  --background: #101114;
+  --pri: #1c1d20;
+  --sec: #4a4d57;
+  --ac: #00ffc4;
+  --text-c: #f9f9f9;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.main .wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: saddlebrown;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .wrapper .top {
+  min-height: 20vh;
+  width: 100%;
+  background-color: rgb(95, 139, 19);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.main .wrapper .top h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-size: 800;
+  color: var(--ac);
+}
+.main .wrapper .bottom {
+  min-height: 70vh;
+  width: 100%;
+  background-color: rgb(22, 25, 194);
+  border-radius: 10px;
+}
+.main .wrapper .top .lower form {
+  position: relative;
+}
+.main .wrapper .top .lower input {
+  font-size: 20px;
+  border-radius: 10px;
+  height: 2rem;
+  width: 100%;
+  border: none;
+  color: var(--ac);
+  padding: 1rem;
+}
+.main .wrapper .top .lower input:focus {
+  outline: none;
+}
+.main .wrapper .top .lower button {
+  font-size: 20px;
+  border-radius: 10px;
+  height: 2rem;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  top: 0;
+  border: none;
+  /* border: 1px solid black; */
+  right: 0;
+}
+
+.main .wrapper .bottom {
+  padding: 1.5rem 1rem;
+}
+
+.main .wrapper .bottom .taskList {
+  list-style: none;
+}
+.main .wrapper .bottom .taskList .task {
+  min-height: 3rem;
+  background-color: black;
+  width: 100%;
+  color: var(--text-c);
+  padding: 1rem 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
